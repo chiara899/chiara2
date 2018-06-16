@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>mi presento</title>
+    <link rel="icon" href="cane.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="io.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Chiara De Cesare</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Ho 18 anni e vengo da Roma e frequento un istituto tecnico superiore</h4>
+
+
+                  <br><br><br>
+<img class="img-thumbnail img-responsive" max-width="300" src="io3.jpg">
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:chiara.decesare899@gmail.com">mail</a></li>
+
+                      <li><a href="https://www.instagram.com/chiara_decesare/" target="_blank"  > instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Scuola</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed"> Sistemi Informativi Aziendali</li>
+                      <li class="doveed">ISS Leopoldo Pirelli</li>
+
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Posti che mi piacciono fotografare</h2>
+                  <ul class="lingueli">
+                      <li>Parco degli acquedotti </li>
+                      <li>Mare</li>
+                      <li>Persone</li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">Parlo di me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa al quinto anno, mi piace nuotare e ascoltare la musica.
+                      I miei generi musicali preferiti sono il rap italiano e la musica pop inglese.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+
+                  <p>Uno dei miei progetti e' diventare fotografa, infatti non vedo l'ora di iscrivermi a un'accademia di fotografia e di fare tanti altri corsi aggiuntivi.</p>
+
+
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="panorama.jpg" class="img-thumbnail img-responsive" max-width="100">
+                        <p>Una mia passione e' la fotografia,in particolare panoramica</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="mare.jpg" class="img-thumbnail img-responsive" max-width="400">
+                        <p>Un'altra mia passione e' il mare,in particolare nuotare e esplorare i fondali</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
